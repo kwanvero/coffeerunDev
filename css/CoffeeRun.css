@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+
+/* Elements */
+
+* {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+h1, h2, h3, button {
+    font-family: 'Montserrat', Helvetica, sans-serif;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+button {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0);
+  margin: 8px;
+  padding: 16px 32px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+button:hover, button:focus{
+  color: #00A7D2;
+  background-color: #fff;
+}
+
+input {
+  margin: 8px;
+  background-color: #F2F2F2;
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-weight: 300;
+  padding: 16px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+select{
+  margin: 6px 0;
+  height: 40px;
+  color:#4b4b4b;
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-weight: 300;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+option{
+  padding-left: 20px;
+}
+
+hr {
+  border-color: rgba(255, 255, 255, 0.8);
+  width: 300px;
+}
+
+li{
+  list-style: none;
+}
+
+/* Theme */
+.CoffeeRun {
+    display: table;
+    width:100%;
+    height: 100vh;
+    text-align: center;
+    background-color: #00A7D2;
+    color: #fff;
+    font-weight: normal;
+}
+
+.visual-align{
+    display:table-cell;
+    height: 100vh;
+    vertical-align:middle;
+}
+
+.section-space{
+    padding-bottom: 40px;
+}
+
+.form-normalize{
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.fields-normalize{
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.button-full{
+    width: 100%;
+}
+
+.button-half{
+    width: 47%;
+    margin: 8px 4px;
+}
+
+.naked-link{
+  text-decoration: underline;
+}
+
+.app-btn--left{
+  margin-left: 0;
+}
+
+.app-btn--right{
+  margin-right: 0;
+  right: 0;
+}
+
+/* Layout */
+.btn-fixed {
+    cursor: pointer;
+    width: 42px;
+    height:42px;
+    padding: 5px;
+    border-width: 2px;
+    border-radius: 100%;
+    position: fixed;
+    right: 8px;
+    top: 8px;
+    font-size: 24px;
+    font-weight: 400;
+    z-index: 10;
+}
+
+.close-btn {
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    border-width: 2px;
+    border-radius: 100%;
+    border-color: rgba(255,255,255,0.5);
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    font-size: 16px;
+    font-weight: 100;
+    margin: 0 auto;
+    line-height: 0px;
+    color: rgba(255,255,255,0.5);
+}
+
+.btn-add:before, .btn-add:before{
+    width: 70px;
+    right: -14px;
+    top: 50px;
+    color: rgba(255, 255, 255, 0);
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-size: 13px;
+    position: absolute;
+    content: 'I want one';
+    display: block;
+
+}
+
+.btn-add:hover:before, .btn-add:focus:before{
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.name-format {
+  text-transform: capitalize;
+}
+
+
+/* Popup Display */
+.popup-container{
+  display: table;
+  background-color: rgba(255, 255, 255, 1);
+  height: 100%;
+  left: 0;
+  margin: 0;
+  padding: 8px 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+}
+
+.popup{
+  display: block;
+  padding: 8px 32px;
+  background-color: #323232;
+  border-radius: 5px;
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+  top: 2%;
+}
+
+.popup input {
+  margin: 8px 0;
+}
+
+@media screen and (min-width: 560px) and (min-height: 840px) {
+  .popup{
+    top: 15%;
+  }
+}
+
+/* Popup Hide*/
+
+.hide{
+  background-color: rgba(255, 255, 255, 0);
+  z-index: -1;
+  display: none;
+  top: 100%;
+}
+
+.orderS{
+  margin: 0 auto;
+  padding: 0;
+  width: 300px;
+}
+
+.orderStats {
+  display: inline-block;
+  width: 300px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  padding-top:15px;
+  padding-bottom:15px;
+}
+
+.orderStats-pay {
+  display: inline-block;
+  width: 38px;
+  height:38px;
+  float: left;
+  text-align: center;
+  line-height: 42px;
+  border: 2px solid #ffffff;
+  border-radius: 100%;
+  background: url('./imgs/paid_bg.png') no-repeat center;
+}
+
+.orderStats-ordering {
+  width: 200px;
+  text-align: left;
+  display: inline-block;
+  float: left;
+}
+
+.order-name {
+  width: 100%;
+  margin: 0;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+
+.order-drink {
+  width: 100%;
+  margin: 0;
+  padding-left: 20px;
+  font-size:24px;
+  color: #ffffff;
+  padding-bottom: 10px;
+}
+
+.order-picky {
+  width: 100%;
+  margin: 0;
+  padding-left: 20px;
+  line-height: 170%;
+}
+
+.ordered{
+  text-decoration: line-through;
+  color: #01323e;
+}
+
+@media screen and (min-width: 580px){
+
+  hr {
+    width:80px;
+  }
+  .button-half{
+    margin: 16px 8px 8px;
+    width: 43%;
+  }
+  .orderStats{
+    padding-top:30px;
+    padding-bottom:30px;
+  }
+  .orderStats-pay {
+    width: 48px;
+    height:48px;
+    line-height: 52px;
+  }
+  .orderS, .orderStats {
+    width: 580px;
+  }
+  .orderStats-ordering{
+    width: 500px;
+  }
+}
+
+@media screen and (min-width: 580px) and (min-height: 900px) {
+  .popup-container{
+    position: fixed;
+  }
+  .popup{
+    top:25%;
+  }
+}
+
+@media screen and (max-width: 580px) and (max-height: 700px){
+  button, input {
+    margin-left:0;
+    margin-right: 0;
+  }
+  p {
+    font-size: 15px;
+    line-height: 120%;
+  }
+
+  .btn-secondary{
+    background-color: #323232;
+  }
+
+  .btn-fixed{
+    position: fixed;
+    width: 38px;
+    height: 38px;
+    top:0;
+    right: 0;
+    font-size: 22px;
+    border-radius: 0;
+    margin: 0;
+    height: 49px;
+    border-right: 0;
+    border-top: 0;
+    border-left: 1px solid;
+    border-bottom: 0;
+  }
+
+  .btn-add:before, .btn-add:before{
+    content: 'order';
+  }
+
+
+  .popup{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    position: absolute;
+    border-radius: 0;
+    height: auto;
+    padding-bottom: 70px;
+  }
+
+  .order-drink {
+    font-size: 21px;
+  }
+
+  .order-picky {
+    line-height: 130%;
+  }
+
+  .app-btn{
+    margin: 0;
+    border-radius: 0px;
+    display: inline-block;
+    width: 50%;
+    position: fixed;
+    bottom: 0;
+    border-top-width: 2px;
+  }
+
+  .app-btn--right{
+    margin-right: 0;
+    right: 0;
+    border-right:0;
+  }
+  .app-btn--left{
+    margin-left: 0;
+    left: 0;
+    border-left:0;
+  }
+
+  .app-header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 16px;
+    padding-bottom: 14px;
+    background-color: #374A5B;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .app-container{
+    margin-top: 70px ;
+  }
+}
